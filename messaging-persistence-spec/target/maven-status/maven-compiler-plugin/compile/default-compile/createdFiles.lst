@@ -1,0 +1,16 @@
+com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientHttpImplConfig.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/VerifyTransactionPostRequestBody.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImpl.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImplConfig$1.class
+com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientHttpImpl.class
+com/backbase/persistence/messaging/listener/spec/v1/transactions/OTPTransactionsListener.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsPostRequestBody.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImplConfig.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsPostResponseBody.class
+com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClient.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsApi.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/TransactionGetResponseBody.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImpl$RestToJmsListenerRouteProxy.class
+META-INF/spring-configuration-metadata.json
+com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientJmsImpl.class
+com/backbase/persistence/messaging/rest/spec/v1/transactions/VerifyTransactionPostResponseBody.class

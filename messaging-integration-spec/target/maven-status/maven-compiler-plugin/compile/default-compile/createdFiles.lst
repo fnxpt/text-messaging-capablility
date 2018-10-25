@@ -1,0 +1,13 @@
+com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSPostRequestBody.class
+com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImplConfig.class
+com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSPostResponseBody.class
+com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClient.class
+com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImpl.class
+com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientHttpImplConfig.class
+com/backbase/messaging/integration/listener/spec/v1/sms/SendSMSListener.class
+com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientHttpImpl.class
+com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImpl$RestToJmsListenerRouteProxy.class
+META-INF/spring-configuration-metadata.json
+com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientJmsImpl.class
+com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImplConfig$1.class
+com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSApi.class

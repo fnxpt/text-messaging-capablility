@@ -1,0 +1,12 @@
+com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRouteProxy.class
+com/backbase/dbs/capabilities/extended/messaging/service/impl/OneTimePasswordStrategyServiceImpl.class
+com/backbase/dbs/capabilities/extended/Application.class
+com/backbase/dbs/capabilities/extended/messaging/routes/MessaginConstants.class
+com/backbase/dbs/capabilities/extended/messaging/service/OneTimePasswordStrategyService.class
+com/backbase/dbs/capabilities/extended/messaging/api/MessagingController.class
+com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRoute.class
+com/backbase/dbs/capabilities/extended/messaging/service/impl/MessagingServiceImpl.class
+com/backbase/dbs/capabilities/extended/messaging/service/MessagingService.class
+com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRouteProxy.class
+com/backbase/dbs/capabilities/extended/messaging/util/ContextUtil.class
+com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRoute.class

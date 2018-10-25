@@ -1,0 +1,7 @@
+com/backbase/dbs/capabilities/extended/AppConfiguration.class
+com/backbase/dbs/capabilities/extended/Application.class
+com/backbase/dbs/capabilities/extended/domain/OTP.class
+com/backbase/dbs/capabilities/extended/repository/OTPRepository.class
+com/backbase/dbs/capabilities/extended/listener/OTPTransactionsListenerImpl.class
+com/backbase/dbs/capabilities/extended/service/MessagingPersistenceService.class
+com/backbase/dbs/capabilities/extended/service/impl/MessagingPersistenceServiceImpl.class

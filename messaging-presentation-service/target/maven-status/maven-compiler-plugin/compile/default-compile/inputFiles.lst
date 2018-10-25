@@ -1,0 +1,12 @@
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/api/MessagingController.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/Application.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRoute.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/util/ContextUtil.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/service/OneTimePasswordStrategyService.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRouteProxy.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRoute.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/service/impl/MessagingServiceImpl.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/service/MessagingService.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/routes/MessaginConstants.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/service/impl/OneTimePasswordStrategyServiceImpl.java
+/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRouteProxy.java

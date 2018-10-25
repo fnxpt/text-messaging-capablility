@@ -1,0 +1,18 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.backbase.com.backbase.dbs.capabilities.extended.messaging.presentation.listener.client.v1.otp.ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientHttpImplConfig",
+      "name": "backbase.communication.services.com.backbase.dbs.capabilities.extended.messaging.presentation",
+      "type": "com.backbase.com.backbase.dbs.capabilities.extended.messaging.presentation.listener.client.v1.otp.ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientHttpImplConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.backbase.com.backbase.dbs.capabilities.extended.messaging.presentation.listener.client.v1.otp.ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientHttpImplConfig",
+      "name": "backbase.communication.services.com.backbase.dbs.capabilities.extended.messaging.presentation.service-id",
+      "description": "The host part of the URLs given to the RestTemplate.  <p>This is used by Ribbon to look up the service instances in the registry.<\/p>",
+      "type": "java.lang.String"
+    }
+  ]
+}
