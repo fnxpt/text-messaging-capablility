@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.backbase.dbs.capabilities.extended</groupId>
-    <artifactId>messaging-capability</artifactId>
+    <artifactId>text-messaging-capability</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Backbase :: Digital Banking Services :: Messaging Capability</name>
+    <name>Backbase :: Digital Banking Services :: Text Messaging Capability</name>
     <description>Messaging DBS Capability</description>
     <url>http://www.backbase.com</url>
     <organization>
@@ -17,12 +17,12 @@
     <licenses>
         <license>
             <name></name>
-            <url>https://github.com/Backbase/twilio-integration-service/blob/master/LICENSE</url>
+            <url>https://github.com/Backbase/text-messaging-capablility/blob/master/LICENSE</url>
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/Backbase/twilio-integration-service</connection>
-        <url>https://github.com/Backbase/twilio-integration-service</url>
+        <connection>scm:git:https://github.com/Backbase/text-messaging-capablility</connection>
+        <url>https://github.com/Backbase/text-messaging-capablility</url>
     </scm>
     <developers>
         <developer>
@@ -46,18 +46,18 @@
 
 
     <modules>
-        <module>messaging-presentation-spec</module>
-        <module>messaging-persistence-spec</module>
-        <module>messaging-integration-spec</module>
-        <module>messaging-persistence-service</module>
-        <module>messaging-presentation-service</module>
+        <module>text-messaging-presentation-spec</module>
+        <module>text-messaging-persistence-spec</module>
+        <module>text-messaging-integration-spec</module>
+        <module>text-messaging-persistence-service</module>
+        <module>text-messaging-presentation-service</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.backbase.dbs.capabilities.extended</groupId>
-                <artifactId>messaging-presentation-spec</artifactId>
+                <artifactId>text-messaging-presentation-spec</artifactId>
                 <version>1.0.0</version>
             </dependency>
         </dependencies>

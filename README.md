@@ -1,6 +1,6 @@
-# Twilio Integration Service demo for Backbase DBS Service
+# Text Messaging Cabability demo for Backbase DBS Service
 
-This service enables you to setup a Twilio integration service to:
+This service enables you to setup a Text Capability service to:
  
 - Send an OTP
 - Verify an OTP
@@ -9,6 +9,7 @@ This service enables you to setup a Twilio integration service to:
 ## Components
 
 #### Messaging Presentation Service
+
 Exposes a REST resource with the following actions for messaging
 
 - Sending an OTP
@@ -24,15 +25,9 @@ Exposes a REST resource with the following actions for messaging
  
 > Check the **Configuration** section for more details
  
-#### Twilio Integration Service
-
-Component that makes the actual integration with Twilio API.
- 
-> Check the **Configuration** section for more details
-
 #### Components overview
 
-![Image of Yaktocat](docs/img/messaging-diagram.png)
+![Component Overview](docs/img/messaging-diagram.png)
 
 Installation
 ============
@@ -50,24 +45,6 @@ Installation
 
 ### Configure
 
-The following properties have to be set and obtained from your Twilio account.
-
-```yaml
-integration:
-  twilio:
-    accountSid: 
-    authToken: 
-    fromNumber: 
-```
-
-These properties can be set as environment properties.
-
-```bash
-java jar -Dintegration.twilio.accountSid=**** \
-    -Dintegration.twilio.authToken=**** \
-    -Dintegration.twilio.fromNumber=**** \ 
-    twilio-integration-service-1.0.0-boot.war
-```
 
 By default the service comes with h2 predefined, in case you want to replace it with another database you can by replacing the following sections:
 
@@ -124,7 +101,7 @@ mvn spring-boot:run
 To run the service from the built binaries, use:
 
 ```bash
-java -jar target/twilio-integration-service-1.0.0-SNAPSHOT-boot.war
+java -jar target/text-messaging-presentation-service-1.0.0-SNAPSHOT-boot.war
 ```
 
 The binaries can run in web containers such as:
