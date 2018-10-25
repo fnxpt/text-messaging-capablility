@@ -6,6 +6,8 @@ This service enables you to setup a Text Capability service to:
 - Verify an OTP
 - Send an SMS
 
+
+
 ## Components
 
 #### Messaging Presentation Service
