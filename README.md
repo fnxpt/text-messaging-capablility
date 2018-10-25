@@ -1,12 +1,13 @@
-# Text Messaging Cabability demo for Backbase DBS Service
+# Text Messaging Capability demo for Backbase DBS Service
 
-This service enables you to setup a Text Capability service to:
+This service enables you to setup a text messaging (e.g. SMS, Whatsapp, etc) capability service to:
  
 - Send an OTP
 - Verify an OTP
-- Send an SMS
+- Send a text message
 
-
+You need to connect to a messaging service provide that caters for sending out text messages, such as:
+- **Twilio**. You can use this service https://github.com/Backbase/twilio-integration-service to accelerate your integration with Twilio.
 
 ## Components
 
@@ -16,7 +17,7 @@ Exposes a REST resource with the following actions for messaging
 
 - Sending an OTP
 - Verifing an OTP
-- Sending an SMS
+- Sending a text message
     
 #### Messaging Persistence Service
  Persists the OTP status. Based on Spring JPA, it can be used  
