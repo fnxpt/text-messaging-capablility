@@ -1,7 +1,0 @@
-/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/AppConfiguration.java
-/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/listener/OTPTransactionsListenerImpl.java
-/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/domain/OTP.java
-/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/Application.java
-/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/repository/OTPRepository.java
-/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/service/MessagingPersistenceService.java
-/Users/pauloc/Documents/backbase/internal/messaging-capablility/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/service/impl/MessagingPersistenceServiceImpl.java

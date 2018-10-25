@@ -1,7 +1,633 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a5c83f-3cb3-4e28-aa9c-5d32e4d6d3b2" name="Default" comment="" />
+    <list default="true" id="b0a5c83f-3cb3-4e28-aa9c-5d32e4d6d3b2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/activemq-whitelist.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/api.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientHttpImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientHttpImplConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientJmsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/listener/spec/v1/sms/SendSMSListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSPostRequestBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSPostResponseBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImpl$RestToJmsListenerRouteProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImplConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImplConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/docs/api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/events/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/examples/errors/example-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/activemq-whitelist.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/annotations/annotations.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/traits/traits.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-bad-request-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-currency.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-forbidden-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-internal-server-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-not-acceptable-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-not-found-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-unauthorized-alt-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-unauthorized-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/examples/example-unsupported-media-type-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/bad-request-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/bb-access-control.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/bb-api-deprecation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/currency.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/error-item.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/forbidden-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/internal-server-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/not-acceptable-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/not-found-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/unauthorized-alt-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/unauthorized-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/lib/types/schemas/unsupported-media-type-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/schemas/body/sms-request-response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/schemas/body/sms-request.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/classes/schemas/errors/error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/dependency-maven-plugin-markers/com.backbase.codegen-raml-types-jar-2.2.551991700452" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientHttpImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientHttpImplConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/listener/client/v1/sms/MessagingIntegrationSendSMSClientJmsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/listener/spec/v1/sms/SendSMSListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSPostRequestBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/rest/spec/v1/sms/SendSMSPostResponseBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/rest/spec/v1/sms/compat/DelegatingSendSMSApiImplConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/generated-sources/com/backbase/messaging/integration/rest/spec/v1/sms/compat/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-integration-spec/target/messaging-integration-spec-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/com/backbase/dbs/capabilities/extended/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/com/backbase/dbs/capabilities/extended/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/com/backbase/dbs/capabilities/extended/domain/OTP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/com/backbase/dbs/capabilities/extended/listener/OTPTransactionsListenerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/com/backbase/dbs/capabilities/extended/repository/OTPRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/com/backbase/dbs/capabilities/extended/service/MessagingPersistenceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/com/backbase/dbs/capabilities/extended/service/impl/MessagingPersistenceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/db/changelog/db.changelog-master.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/db/changelog/ext_otp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/db/changelog/otp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT-boot.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT-classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/com/backbase/dbs/capabilities/extended/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/com/backbase/dbs/capabilities/extended/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/com/backbase/dbs/capabilities/extended/domain/OTP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/com/backbase/dbs/capabilities/extended/listener/OTPTransactionsListenerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/com/backbase/dbs/capabilities/extended/repository/OTPRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/com/backbase/dbs/capabilities/extended/service/MessagingPersistenceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/com/backbase/dbs/capabilities/extended/service/impl/MessagingPersistenceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/db/changelog/db.changelog-master.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/db/changelog/ext_otp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/db/changelog/otp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/jboss-deployment-structure.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/HdrHistogram-2.1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/accessors-smart-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/activemq-client-5.14.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/activemq-jms-pool-5.14.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/activemq-pool-5.14.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/api-2.2.72.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/archaius-core-0.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/asm-5.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/aspectjrt-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/backbase-loader-2.1.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/backbase-loader-tool-2.1.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/bcpkix-jdk15on-1.55.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/bcprov-jdk15on-1.57.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/building-blocks-common-2.2.63.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/caching-1.0.50.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/camel-core-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/camel-groovy-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/camel-jackson-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/camel-jms-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/camel-script-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/camel-spring-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/camel-spring-boot-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/cloud-config-1.0.48.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-configuration-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-io-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/commons-validator-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/communication-2.2.82.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/configuration-2.2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/geronimo-jms_2.0_spec-1.0-alpha-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/groovy-all-2.4.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/guava-18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/h2-1.4.197.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hawtbuf-1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.0.12.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-5.0.12.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-5.3.6.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/httpclient-4.5.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hystrix-core-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hystrix-javanica-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hystrix-metrics-event-stream-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/hystrix-serialization-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/internal-jwt-1.20.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.8.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-dataformat-csv-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-module-afterburner-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-module-jaxb-annotations-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jandex-2.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/javassist-3.21.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/javax.transaction-api-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jcip-annotations-1.0-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/json-smart-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jsr305-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/jwt-core-1.20.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/keycloak-adapter-core-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/keycloak-adapter-spi-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/keycloak-common-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/keycloak-core-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/keycloak-spring-security-adapter-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/liquibase-core-3.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/log4j-over-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/logging-0.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/messaging-persistence-spec-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/modelmapper-0.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/multi-tenancy-1.0.50.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/nimbus-jose-jwt-4.41.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/persistence-3.1.60.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/production-support-2.2.54.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/resilience-2.2.59.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/rxjava-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-aspects-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-actuator-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-configuration-processor-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-loader-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-loader-tools-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-actuator-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-cache-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-security-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-commons-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-config-client-1.4.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-context-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-core-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-sleuth-core-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-sleuth-zipkin-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-config-1.4.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-hystrix-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-archaius-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-hystrix-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-sleuth-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-context-support-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.13.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-1.11.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-jms-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-messaging-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-orm-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-security-config-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-security-core-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-security-crypto-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-security-rsa-1.0.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-security-web-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/tomcat-jdbc-8.5.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/tomcat-juli-8.5.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/validation-3.0.69.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/zipkin-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/zipkin-reporter-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/zipkin-sender-amqp-client-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/messaging-persistence-service-1.0.0-SNAPSHOT/WEB-INF/lib/zipkin-sender-kafka11-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-service/target/test-classes/application-it.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/activemq-whitelist.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/api.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientHttpImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientHttpImplConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientJmsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/listener/spec/v1/transactions/OTPTransactionsListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsPostRequestBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsPostResponseBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/TransactionGetResponseBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/VerifyTransactionPostRequestBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/VerifyTransactionPostResponseBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImpl$RestToJmsListenerRouteProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImplConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImplConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/docs/api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/events/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/examples/errors/example-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/activemq-whitelist.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/annotations/annotations.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/traits/traits.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-bad-request-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-currency.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-forbidden-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-internal-server-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-not-acceptable-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-not-found-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-unauthorized-alt-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-unauthorized-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/examples/example-unsupported-media-type-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/bad-request-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/bb-access-control.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/bb-api-deprecation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/currency.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/error-item.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/forbidden-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/internal-server-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/not-acceptable-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/not-found-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/unauthorized-alt-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/unauthorized-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/lib/types/schemas/unsupported-media-type-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/schemas/body/get-otp-transaction-response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/schemas/body/post-otp-transaction-response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/schemas/body/post-otp-transaction.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/schemas/body/verify-otp-transaction-response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/schemas/body/verify-otp-transaction.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/classes/schemas/errors/error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/dependency-maven-plugin-markers/com.backbase.codegen-raml-types-jar-2.2.551991700452" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientHttpImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientHttpImplConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/listener/client/v1/transactions/PersistenceMessagingOTPTransactionsClientJmsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/listener/spec/v1/transactions/OTPTransactionsListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsPostRequestBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/OTPTransactionsPostResponseBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/TransactionGetResponseBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/VerifyTransactionPostRequestBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/VerifyTransactionPostResponseBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/DelegatingOTPTransactionsApiImplConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/generated-sources/com/backbase/persistence/messaging/rest/spec/v1/transactions/compat/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-persistence-spec/target/messaging-persistence-spec-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/api/MessagingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/routes/MessaginConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRoute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRouteProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRoute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRouteProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/service/MessagingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/service/OneTimePasswordStrategyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/service/impl/MessagingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/service/impl/OneTimePasswordStrategyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/com/backbase/dbs/capabilities/extended/messaging/util/ContextUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0-boot.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0-classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/api/MessagingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/routes/MessaginConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRoute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/routes/SendOTPRouteProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRoute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/routes/VerifyOTPRouteProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/service/MessagingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/service/OneTimePasswordStrategyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/service/impl/MessagingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/service/impl/OneTimePasswordStrategyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/com/backbase/dbs/capabilities/extended/messaging/util/ContextUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/jboss-deployment-structure.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/HdrHistogram-2.1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/accessors-smart-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/activemq-client-5.14.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/activemq-jms-pool-5.14.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/activemq-pool-5.14.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/antlr-runtime-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/api-2.2.72.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/archaius-core-0.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/asm-5.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/aspectjrt-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/aspectjweaver-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/auth-security-2.1.77.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/backbase-loader-2.1.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/backbase-loader-tool-2.1.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/bcpkix-jdk15on-1.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/bcprov-jdk15on-1.57.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/building-blocks-common-2.2.63.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/caching-1.0.50.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/camel-core-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/camel-groovy-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/camel-jackson-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/camel-jms-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/camel-script-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/camel-spring-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/camel-spring-boot-2.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/cloud-config-1.0.48.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-beanutils-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-configuration-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-io-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-jxpath-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-math-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-pool2-2.4.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/commons-validator-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/communication-2.2.82.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/configuration-2.2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/eureka-client-1.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/eureka-core-1.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/geronimo-jms_2.0_spec-1.0-alpha-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/groovy-all-2.4.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/gson-2.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/guava-18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/guice-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/hawtbuf-1.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/hibernate-validator-5.3.6.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/httpclient-4.5.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/httpcore-4.4.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/hystrix-core-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/hystrix-javanica-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/hystrix-metrics-event-stream-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/hystrix-serialization-1.5.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/internal-jwt-1.20.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jackson-core-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jackson-databind-2.8.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jackson-dataformat-csv-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jackson-module-afterburner-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jackson-module-jaxb-annotations-2.8.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jaxb-core-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jaxb-impl-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jcip-annotations-1.0-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jersey-apache-client4-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jersey-client-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jersey-core-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jettison-1.3.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/joda-time-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/json-smart-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jsr305-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jsr311-api-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/jwt-core-1.20.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/keycloak-adapter-core-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/keycloak-adapter-spi-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/keycloak-common-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/keycloak-core-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/keycloak-spring-security-adapter-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/log4j-over-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/logging-0.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/messaging-integration-spec-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/messaging-persistence-spec-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/messaging-presentation-spec-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/modelmapper-0.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/multi-tenancy-1.0.50.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netflix-commons-util-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netflix-eventbus-0.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netflix-infix-0.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netflix-statistics-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netty-buffer-4.0.37.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netty-codec-4.0.37.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netty-codec-http-4.0.37.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netty-common-4.0.37.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netty-handler-4.0.37.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netty-transport-4.0.37.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/netty-transport-native-epoll-4.0.37.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/nimbus-jose-jwt-4.41.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/production-support-2.2.54.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/registry-client-1.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/resilience-2.2.59.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/ribbon-2.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/ribbon-core-2.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/ribbon-eureka-2.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/ribbon-httpclient-2.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/ribbon-loadbalancer-2.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/ribbon-transport-2.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/rxjava-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/rxnetty-0.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/rxnetty-contexts-0.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/rxnetty-servo-0.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/servo-core-0.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/servo-internal-0.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/snakeyaml-1.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-aop-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-actuator-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-autoconfigure-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-configuration-processor-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-loader-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-loader-tools-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-starter-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-starter-actuator-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-starter-aop-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-starter-cache-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-starter-logging-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-starter-security-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-boot-starter-web-1.5.15.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-commons-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-config-client-1.4.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-context-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-netflix-core-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-netflix-eureka-client-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-sleuth-core-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-sleuth-zipkin-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-config-1.4.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-hystrix-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-netflix-archaius-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-netflix-eureka-client-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-netflix-hystrix-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-netflix-ribbon-1.4.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-cloud-starter-sleuth-1.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-context-support-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-jms-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-messaging-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-retry-1.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-security-config-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-security-core-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-security-crypto-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-security-csrf-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-security-rsa-1.0.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-security-web-4.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-web-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/spring-webmvc-4.3.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/stax-api-1.0-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/stax-api-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/stax2-api-3.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/stringtemplate-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/validation-3.0.69.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/woodstox-core-asl-4.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/xmlpull-1.1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/xpp3_min-1.1.4c.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/xstream-1.4.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/zipkin-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/zipkin-reporter-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/zipkin-sender-amqp-client-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/messaging-presentation-service-1.0.0/WEB-INF/lib/zipkin-sender-kafka11-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-service/target/test-classes/application-it.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/activemq-whitelist.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/api.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientHttpImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientHttpImplConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientJmsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/spec/v1/otp/OneTimePasswordListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordPostRequestBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordPostResponseBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordVerifyPostRequestBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordVerifyPostResponseBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/compat/DelegatingOneTimePasswordApiImpl$RestToJmsListenerRouteProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/compat/DelegatingOneTimePasswordApiImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/compat/DelegatingOneTimePasswordApiImplConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/compat/DelegatingOneTimePasswordApiImplConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/docs/api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/events/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/examples/body/example-item-created.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/examples/body/example-item-get.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/examples/body/example-item.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/examples/errors/example-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/activemq-whitelist.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/annotations/annotations.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/traits/traits.raml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-bad-request-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-currency.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-forbidden-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-internal-server-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-not-acceptable-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-not-found-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-unauthorized-alt-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-unauthorized-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/examples/example-unsupported-media-type-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/bad-request-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/bb-access-control.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/bb-api-deprecation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/currency.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/error-item.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/forbidden-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/internal-server-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/not-acceptable-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/not-found-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/unauthorized-alt-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/unauthorized-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/lib/types/schemas/unsupported-media-type-error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/schemas/body/otp-response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/schemas/body/otp-verify-response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/schemas/body/otp-verify.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/schemas/body/otp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/classes/schemas/errors/error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/dependency-maven-plugin-markers/com.backbase.codegen-raml-types-jar-2.2.551991700452" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientHttpImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientHttpImplConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/client/v1/otp/ComBackbaseDbsCapabilitiesExtendedMessagingPresentationOneTimePasswordClientJmsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/listener/spec/v1/otp/OneTimePasswordListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordPostRequestBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordPostResponseBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordVerifyPostRequestBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/OneTimePasswordVerifyPostResponseBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/compat/DelegatingOneTimePasswordApiImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/compat/DelegatingOneTimePasswordApiImplConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/generated-sources/com/backbase/com/backbase/dbs/capabilities/extended/messaging/presentation/rest/spec/v1/otp/compat/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-presentation-spec/target/messaging-presentation-spec-1.0.0.jar" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/messaging-persistence-service/target/" />
     <ignored path="$PROJECT_DIR$/messaging-presentation-spec/target/" />
     <ignored path="$PROJECT_DIR$/messaging-presentation-service/target/" />
@@ -18,11 +644,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="95">
+                <caret line="102" selection-start-line="102" selection-end-line="102" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+            <state relative-caret-position="684">
+              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
             </state>
           </provider>
         </entry>
@@ -58,6 +696,7 @@
         <option value="$PROJECT_DIR$/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/service/OTPPersistenceService.java" />
         <option value="$PROJECT_DIR$/messaging-presentation-service/src/main/java/com/backbase/dbs/capabilities/extended/otp/routes/OTPRouteProxy.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -172,12 +811,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540450861791</updated>
-      <workItem from="1540450863412" duration="964000" />
+      <workItem from="1540450863412" duration="1517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="964000" />
+    <option name="totallyTimeSpent" value="1517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -224,16 +863,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messaging-persistence-service/src/main/java/com/backbase/dbs/capabilities/extended/service/OTPPersistenceService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -270,8 +899,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
+        <state relative-caret-position="377">
           <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="102" selection-start-line="102" selection-end-line="102" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
